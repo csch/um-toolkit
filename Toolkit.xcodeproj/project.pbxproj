@@ -21,6 +21,8 @@
 		3B8965333C7DEAAAFE9927FB /* UIView+UM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE9927FA /* UIView+UM.m */; };
 		3B8965333C7DEAAAFE9927FE /* NSString_UM_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE9927FD /* NSString_UM_Test.m */; };
 		3B8965333C7DEAAAFE992801 /* UIView_UM_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992800 /* UIView_UM_Test.m */; };
+		3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992804 /* UMAlertView.m */; };
+		3B8965333C7DEAAAFE992809 /* UMAlertView_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		3B8965333C7DEAAAFE9927FF /* NSString_UM_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_UM_Test.h; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992800 /* UIView_UM_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_UM_Test.m; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992802 /* UIView_UM_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_UM_Test.h; sourceTree = "<group>"; };
+		3B8965333C7DEAAAFE992803 /* UMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMAlertView.h; sourceTree = "<group>"; };
+		3B8965333C7DEAAAFE992804 /* UMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView.m; sourceTree = "<group>"; };
+		3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView_Test.m; sourceTree = "<group>"; };
+		3B8965333C7DEAAAFE992808 /* UMAlertView_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMAlertView_Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 		3B8965333C7DEAAAFE9927D3 /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				3B8965333C7DEAAAFE992804 /* UMAlertView.m */,
+				3B8965333C7DEAAAFE992803 /* UMAlertView.h */,
 				3B8965333C7DEAAAFE9927FC /* UIView+UM.h */,
 				3B8965333C7DEAAAFE9927FA /* UIView+UM.m */,
 				3B8965333C7DEAAAFE9927F9 /* NSString+UM.h */,
@@ -140,6 +148,8 @@
 		3B8965333C7DEAAAFE9927EE /* ToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
+				3B8965333C7DEAAAFE992808 /* UMAlertView_Test.h */,
+				3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */,
 				3B8965333C7DEAAAFE992802 /* UIView_UM_Test.h */,
 				3B8965333C7DEAAAFE992800 /* UIView_UM_Test.m */,
 				3B8965333C7DEAAAFE9927FF /* NSString_UM_Test.h */,
@@ -264,6 +274,7 @@
 				3B8965333C7DEAAAFE9927DE /* UMAppDelegate.m in Sources */,
 				3B8965333C7DEAAAFE9927F8 /* NSString+UM.m in Sources */,
 				3B8965333C7DEAAAFE9927FB /* UIView+UM.m in Sources */,
+				3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +284,7 @@
 			files = (
 				3B8965333C7DEAAAFE9927FE /* NSString_UM_Test.m in Sources */,
 				3B8965333C7DEAAAFE992801 /* UIView_UM_Test.m in Sources */,
+				3B8965333C7DEAAAFE992809 /* UMAlertView_Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

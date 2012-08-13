@@ -7,6 +7,7 @@
 //
 
 #import "UMAppDelegate.h"
+#import "UMAlertView.h"
 
 @implementation UMAppDelegate
 
@@ -15,11 +16,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    // self.window.backgroundColor = [UIColor whiteColor];
-    // [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    [self demoAlertView];
+
     return YES;
+}
+
+- (void) demoAlertView {
+    UMAlertView * alertView = [[UMAlertView alloc] initWithTitle:@"Hello" message:@"Do you want Apples or Oranges?"
+                                                      completion:^(NSInteger index, UIAlertView* _alertView) {
+                                                          if (index == 0) {
+                                                              NSLog(@"Cancel");
+                                                          }
+                                                          else if (index == 1) {
+                                                              NSLog(@"Apples");
+                                                          }
+                                                          else {
+                                                              NSLog(@"Oranges");
+                                                          }
+                                                      }
+                                               cancelButtonTitle:@"Cancel" otherButtonTitles:@"Apples", @"Oranges", nil];
+    [alertView show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
