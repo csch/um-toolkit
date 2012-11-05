@@ -23,6 +23,8 @@
 		3B8965333C7DEAAAFE992801 /* UIView_UM_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992800 /* UIView_UM_Test.m */; };
 		3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992804 /* UMAlertView.m */; };
 		3B8965333C7DEAAAFE992809 /* UMAlertView_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */; };
+		3DDB9CF0B049754D48B0ACA9 /* UMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB94D777A5F8124494582F /* UMUtils.m */; };
+		3DDB9E5C5C9733C5731D5A1A /* UMTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB96497FF89DDE9514B915 /* UMTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		3B8965333C7DEAAAFE992804 /* UMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView.m; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView_Test.m; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992808 /* UMAlertView_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMAlertView_Test.h; sourceTree = "<group>"; };
+		3DDB94D777A5F8124494582F /* UMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMUtils.m; sourceTree = "<group>"; };
+		3DDB96497FF89DDE9514B915 /* UMTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMTestCase.m; sourceTree = "<group>"; };
+		3DDB9EF8B1075A94F8494288 /* UMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMUtils.h; sourceTree = "<group>"; };
+		3DDB9F53F4C4B4F4BE727E34 /* UMTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 		3B8965333C7DEAAAFE9927D3 /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				3DDB9F53F4C4B4F4BE727E34 /* UMTestCase.h */,
+				3DDB96497FF89DDE9514B915 /* UMTestCase.m */,
 				3B8965333C7DEAAAFE992804 /* UMAlertView.m */,
 				3B8965333C7DEAAAFE992803 /* UMAlertView.h */,
 				3B8965333C7DEAAAFE9927FC /* UIView+UM.h */,
@@ -130,6 +138,8 @@
 				3B8965333C7DEAAAFE9927DD /* UMAppDelegate.m */,
 				3B8965333C7DEAAAFE9927DC /* UMAppDelegate.h */,
 				3B8965333C7DEAAAFE9927D4 /* Supporting Files */,
+				3DDB94D777A5F8124494582F /* UMUtils.m */,
+				3DDB9EF8B1075A94F8494288 /* UMUtils.h */,
 			);
 			path = Toolkit;
 			sourceTree = "<group>";
@@ -275,6 +285,7 @@
 				3B8965333C7DEAAAFE9927F8 /* NSString+UM.m in Sources */,
 				3B8965333C7DEAAAFE9927FB /* UIView+UM.m in Sources */,
 				3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */,
+				3DDB9CF0B049754D48B0ACA9 /* UMUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +296,7 @@
 				3B8965333C7DEAAAFE9927FE /* NSString_UM_Test.m in Sources */,
 				3B8965333C7DEAAAFE992801 /* UIView_UM_Test.m in Sources */,
 				3B8965333C7DEAAAFE992809 /* UMAlertView_Test.m in Sources */,
+				3DDB9E5C5C9733C5731D5A1A /* UMTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
