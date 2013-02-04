@@ -6,9 +6,40 @@
 
 
 #import "UIView+UM.h"
+#import "PageView.h"
 
 
 @implementation UIView (UM)
+
+- (void) removeAllSubviews {
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+
+- (NSArray*) viewsWithTag: (NSUInteger) tag {
+    NSMutableArray* views = [NSMutableArray new];
+    for (UIView* sub in self.subviews) {
+        if (sub.tag == tag) {
+            [views addObject:sub];
+        }
+    }
+    return views;
+}
+
+- (CGFloat)frameX {
+    return self.frame.origin.x;
+}
+
+- (CGFloat)frameY {
+    return self.frame.origin.y;
+}
+
+- (CGFloat)frameHeight {
+    return self.frame.size.height;
+}
+
+- (CGFloat)frameWidth {
+    return self.frame.size.width;
+}
 
 - (void) setFrameX: (CGFloat) x {
     CGRect newFrame = self.frame;
@@ -46,18 +77,44 @@
     self.frame = newFrame;
 }
 
+- (void) setCenterX: (CGFloat) x {
+    self.center = CGPointMake(x, self.center.y);
+}
+
+- (void) setCenterY: (CGFloat) y {
+    self.center = CGPointMake(self.center.x, y);
+}
+
 - (void) fadeIn {
+    [self fadeInWithDuration:0.25];
+}
+
+- (void) fadeOut {
+    [self fadeOutWithDuration:0.25];
+}
+
+- (void) fadeInWithDuration: (CGFloat) duration {
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationDuration:duration];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     self.alpha = 1.0;
     [UIView commitAnimations];
 }
 
-- (void) fadeOut {
+- (void) fadeOutWithDuration: (CGFloat) duration {
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    [UIView setAnimationDuration:duration];
     self.alpha = 0.0;
     [UIView commitAnimations];
+}
+
+- (void) centerInFrame: (CGRect) frame {
+    CGFloat x = (frame.size.width - self.frame.size.width) / 2.0;
+    CGFloat y = (frame.size.height - self.frame.size.height) / 2.0;
+    [self setFrameOrigin:CGPointMake(x, y)];
 }
 
 - (void) show {
@@ -67,5 +124,22 @@
 - (void) hide {
     self.hidden = YES;
 }
+
+- (void)moveUp:(CGFloat) up {
+    [self setFrameY:self.frame.origin.y-up];
+}
+
+- (void)moveLeft:(CGFloat) left {
+    [self setFrameX:self.frame.origin.x-left];
+}
+
+- (void)moveRight:(CGFloat) right {
+    [self moveLeft:-right];
+}
+
+- (void)moveDown:(CGFloat) down {
+    [self moveUp:-down];
+}
+
 
 @end

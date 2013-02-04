@@ -20,7 +20,7 @@
             va_list args;
             va_start(args, otherButtonTitles);
             NSString* buttonTitle;
-            while(buttonTitle = va_arg(args,NSString*)) {
+            while((buttonTitle = va_arg(args,NSString*))) {
                 [self addButtonWithTitle:buttonTitle];
             }
             va_end(args);
