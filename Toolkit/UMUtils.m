@@ -5,7 +5,7 @@
 
 
 #import "UMUtils.h"
-#import "AppDelegate.h"
+// #import "AppDelegate.h"
 
 
 @implementation UMUtils {
@@ -118,6 +118,7 @@
     else {
         label.font = [UIFont systemFontOfSize:size];
     }
+
     CGSize labelSize = [text sizeWithFont:label.font];
     label.frame = CGRectMake(0, 0, labelSize.width, labelSize.height);
     return label;

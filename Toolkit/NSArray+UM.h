@@ -27,6 +27,8 @@
 
 - (NSObject*)tenth;
 
+- (id)reduce:(id (^)(id, id))block;
+
 - (NSArray*)map:(id (^)(id))block;
 
 

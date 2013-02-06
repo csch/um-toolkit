@@ -48,12 +48,23 @@
     return [self objectAtIndex:9];
 }
 
+- (id)reduce:(id(^)(id obj, id matter))block {
+    id matter = nil;
+    for (id item in self) {
+        matter = block(item, matter);
+    };
+    return matter;
+}
+
 - (NSArray *)map:(id (^)(id obj))block {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
     for (id item in self) {
-        [array addObject:block(item)];
+        id anObject = block(item);
+        if (anObject != nil) {
+            [array addObject:anObject];
+        }
     };
-    return array; //[NSArray arrayWithArray:array];
+    return array; 
 }
 
 @end

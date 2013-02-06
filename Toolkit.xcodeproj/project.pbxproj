@@ -23,7 +23,10 @@
 		3B8965333C7DEAAAFE992801 /* UIView_UM_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992800 /* UIView_UM_Test.m */; };
 		3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992804 /* UMAlertView.m */; };
 		3B8965333C7DEAAAFE992809 /* UMAlertView_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */; };
+		3DDB958942BD6F917CF29FED /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB9641335EF040CBE034CF /* NSData+Base64.m */; };
+		3DDB9C336B01AB29BB219EAA /* UIWebView+UM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB9B409D717EE65993A9F8 /* UIWebView+UM.m */; };
 		3DDB9CF0B049754D48B0ACA9 /* UMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB94D777A5F8124494582F /* UMUtils.m */; };
+		3DDB9E1E85668DE9DDA7A92A /* UMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB9EB9B19713D13D69AA55 /* UMTextField.m */; };
 		3DDB9E5C5C9733C5731D5A1A /* UMTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB96497FF89DDE9514B915 /* UMTestCase.m */; };
 		3DDB9E89AA16D5FB5BFCCA62 /* NSArray+UM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB9F535806B5BE7728BC84 /* NSArray+UM.m */; };
 /* End PBXBuildFile section */
@@ -65,9 +68,15 @@
 		3B8965333C7DEAAAFE992804 /* UMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView.m; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992806 /* UMAlertView_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView_Test.m; sourceTree = "<group>"; };
 		3B8965333C7DEAAAFE992808 /* UMAlertView_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMAlertView_Test.h; sourceTree = "<group>"; };
+		3DDB92024C6539FF7F4AECD0 /* UMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMTextField.h; sourceTree = "<group>"; };
 		3DDB94D777A5F8124494582F /* UMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMUtils.m; sourceTree = "<group>"; };
 		3DDB953F11506A95531792D5 /* NSArray+UM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UM.h"; sourceTree = "<group>"; };
+		3DDB9641335EF040CBE034CF /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		3DDB96497FF89DDE9514B915 /* UMTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMTestCase.m; sourceTree = "<group>"; };
+		3DDB9AD6B01A34F93EF45C7A /* UIWebView+UM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+UM.h"; sourceTree = "<group>"; };
+		3DDB9B409D717EE65993A9F8 /* UIWebView+UM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+UM.m"; sourceTree = "<group>"; };
+		3DDB9C5C3F6AF4B67217BE50 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3DDB9EB9B19713D13D69AA55 /* UMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMTextField.m; sourceTree = "<group>"; };
 		3DDB9EF8B1075A94F8494288 /* UMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMUtils.h; sourceTree = "<group>"; };
 		3DDB9F535806B5BE7728BC84 /* NSArray+UM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UM.m"; sourceTree = "<group>"; };
 		3DDB9F53F4C4B4F4BE727E34 /* UMTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMTestCase.h; sourceTree = "<group>"; };
@@ -145,6 +154,12 @@
 				3DDB9EF8B1075A94F8494288 /* UMUtils.h */,
 				3DDB9F535806B5BE7728BC84 /* NSArray+UM.m */,
 				3DDB953F11506A95531792D5 /* NSArray+UM.h */,
+				3DDB9B409D717EE65993A9F8 /* UIWebView+UM.m */,
+				3DDB9AD6B01A34F93EF45C7A /* UIWebView+UM.h */,
+				3DDB9641335EF040CBE034CF /* NSData+Base64.m */,
+				3DDB9C5C3F6AF4B67217BE50 /* NSData+Base64.h */,
+				3DDB9EB9B19713D13D69AA55 /* UMTextField.m */,
+				3DDB92024C6539FF7F4AECD0 /* UMTextField.h */,
 			);
 			path = Toolkit;
 			sourceTree = "<group>";
@@ -292,6 +307,9 @@
 				3B8965333C7DEAAAFE992805 /* UMAlertView.m in Sources */,
 				3DDB9CF0B049754D48B0ACA9 /* UMUtils.m in Sources */,
 				3DDB9E89AA16D5FB5BFCCA62 /* NSArray+UM.m in Sources */,
+				3DDB9C336B01AB29BB219EAA /* UIWebView+UM.m in Sources */,
+				3DDB958942BD6F917CF29FED /* NSData+Base64.m in Sources */,
+				3DDB9E1E85668DE9DDA7A92A /* UMTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
