@@ -7,7 +7,22 @@
 
 #import <Foundation/Foundation.h>
 
+@class PageView;
+
 @interface UIView (UM)
+
+- (void)removeAllSubviews;
+
+- (NSArray*)viewsWithTag:(NSUInteger)tag;
+
+
+- (CGFloat)frameX;
+
+- (CGFloat)frameY;
+
+- (CGFloat)frameHeight;
+
+- (CGFloat)frameWidth;
 
 - (void)setFrameX:(CGFloat)x;
 
@@ -21,14 +36,31 @@
 
 - (void)setFrameOrigin:(CGPoint)p;
 
+- (void)setCenterX:(CGFloat)x;
+
+- (void)setCenterY:(CGFloat)y;
+
 - (void)fadeIn;
 
 - (void)fadeOut;
 
+- (void)fadeInWithDuration:(CGFloat)duration;
+
+- (void)fadeOutWithDuration:(CGFloat)duration;
+
+- (void)centerInFrame:(CGRect)frame;
 
 - (void)show;
 
 - (void)hide;
 
+- (void)moveUp:(CGFloat)i;
 
+- (void)moveLeft:(CGFloat)left;
+
+- (void)moveRight:(CGFloat)right;
+
+- (void)moveDown:(CGFloat)down;
+
+- (void)hideGreen;
 @end
